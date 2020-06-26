@@ -9,14 +9,14 @@ export const selectShopCollections = createSelector(
 
 export const selectCollectionsForPreview = createSelector(
   [selectShopCollections],
-  (collections) => Object.keys(collections).map((key) => collections[key])
+  (collections) =>
+    collections ? Object.keys(collections).map((key) => collections[key]) : []
 );
 
 export const selectCollection = (collectionUrlParam) =>
   //we are creating this selector as we want to get
   //items of particular id. Hence the above selector has been passed in below.
   //this is the first selector we have written which would need a prop
-  createSelector(
-    [selectShopCollections],
-    (collections) => collections[collectionUrlParam]
+  createSelector([selectShopCollections], (collections) =>
+    collections ? collections[collectionUrlParam] : null
   );

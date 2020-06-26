@@ -24,3 +24,14 @@
     }
   }
 }
+
+@media screen and (max-width: 665px) {
+  .header {
+    padding-right: 24.5px;
+  }
+  .logo-container {
+    height: 100%;
+    width: 70px;
+    padding: 5px;
+  }
+}

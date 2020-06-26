@@ -50,3 +50,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 665px) {
+  body {
+    padding: 20px 10px;
+  }
+}
