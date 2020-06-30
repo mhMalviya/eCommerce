@@ -1,0 +1,92 @@
+.contact {
+  min-width: 90%;
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+
+  padding: 50px;
+
+  .image-container {
+    z-index: 10000;
+    height: 450px;
+    width: 45%;
+    background-position: center;
+    background-size: cover;
+    margin-left: 50px;
+  }
+  .contact-content {
+    padding: 10px;
+    height: 350px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    & h2 {
+      margin-bottom: 10px;
+    }
+    & h3 {
+      margin: 0;
+    }
+    .contact-content-social-media {
+      padding: 15px;
+      width: 100px;
+      display: flex;
+      justify-content: space-between;
+
+      &:hover {
+        //Whenever hovered upon
+        cursor: pointer; //change the cursor to pointer
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    min-width: 95vw;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 50px;
+
+    .image-container {
+      z-index: 10000;
+      height: 350px;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      margin: 0 auto;
+    }
+    .contact-content {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+      & h2 {
+        margin-bottom: 10px;
+      }
+      & h3 {
+        margin: 0;
+      }
+      .contact-content-social-media {
+        padding: 15px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        &:hover {
+          //Whenever hovered upon
+          cursor: pointer; //change the cursor to pointer
+        }
+      }
+    }
+  }
+}

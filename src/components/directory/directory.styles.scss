@@ -4,23 +4,3 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-@media screen and (max-width: 750px) {
-  .directory-menu {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 665px) {
-  .directory-menu {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-}

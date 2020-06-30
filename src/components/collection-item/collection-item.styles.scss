@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 800px) {
   .collection-item {
     width: 46vw; //makes it relative to the view width not to the parent container width
     display: flex;
@@ -75,7 +75,7 @@
     }
 
     .collection-footer {
-      width: 100%;
+      width: 99%;
       height: 5%;
       display: flex;
       justify-content: space-between;
